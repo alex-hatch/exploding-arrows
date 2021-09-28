@@ -1,0 +1,5 @@
+name: ExplodingArrows
+version: 1.0
+author: Alex
+main: me.alex.firstplugin.Main
+api-version: 1.13
