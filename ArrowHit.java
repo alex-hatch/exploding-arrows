@@ -20,7 +20,6 @@ public class ArrowHit implements Listener {
             World world = location.getWorld();
             world.strikeLightning(location);
             world.generateTree(location, TreeType.TREE);
-
         }
     }
 }
