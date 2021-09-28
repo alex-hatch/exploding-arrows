@@ -16,31 +16,11 @@ public class ArrowHit implements Listener {
         if(e.getEntity() instanceof Arrow && e.getEntity().getShooter() instanceof Player) {
             Arrow a = (Arrow) e.getEntity();
             Player s = (Player) a.getShooter();
-            // add permission here
             Location location = a.getLocation();
             World world = location.getWorld();
-            double x = location.getX();
-            double y = location.getY();
-            double z = location.getZ();
-            //world.createExplosion(x,y,z, 4, false, true);
             world.strikeLightning(location);
             world.generateTree(location, TreeType.TREE);
 
         }
-
-        if(e.getEntity() instanceof Snowball && e.getEntity().getShooter() instanceof Player) {
-            Snowball a = (Snowball) e.getEntity();
-            Player s = (Player) a.getShooter();
-            // add permission here
-            Location location = a.getLocation();
-            World world = location.getWorld();
-            double x = location.getX();
-            double y = location.getY();
-            double z = location.getZ();
-            world.createExplosion(x,y,z, 4, false, true);
-        }
     }
-
-
-
 }
